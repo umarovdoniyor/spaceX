@@ -24,6 +24,9 @@ const LAUNCH_QUERY = gql`
 export class Launch extends Component {
   render() {
     let {flight_number} = this.props.match.params;
+    {
+      console.log(this.props.match);
+    }
     flight_number = parseInt(flight_number);
     return (
       <Fragment>
